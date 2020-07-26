@@ -1,0 +1,28 @@
+<br><br>
+<div class="row">
+    <div class="col-md-4"></div>
+<div class="card col-md-4" style="padding-left: 0px; padding-right: 0px;">
+    <div class="card-header" >
+        Login
+    </div>
+    <div class="card-body">
+        <form [formGroup]="formHeaders">
+        <div>
+            <label for="">Email</label>
+            <input  type="email" class="form-control form-control-sm" placeholder="Ingrese usuario"
+            formControlName="email">
+        </div>
+        <div>
+            <label for="">Contraseña</label>
+            <input type="password" class="form-control form-control-sm" placeholder="Ingrese contraseña"
+            formControlName="password">
+        </div><br>
+        <div class="centers">
+            <button [disabled]="formHeaders.invalid" class="btn btn-sm btn-success" (click)="logins()">Login</button><br>
+            <br>
+            <button class="bt bt-sm btn-info" (click)="navigates()">Registrate</button>
+        </div>
+    </form>
+</div>
+</div>
+</div>
